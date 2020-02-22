@@ -1,0 +1,4 @@
+type Query {
+  getTokenById(input: GetTokenByIdReq): GetTokenByIdRes
+  getTokenList: GetTokenListRes
+}

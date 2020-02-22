@@ -1,0 +1,32 @@
+type Token {
+  id: String
+  token: String
+}
+
+input GetTokenByIdReq {
+  id: String
+}
+type GetTokenByIdRes {
+  success: Boolean
+  message: String
+  data: Token
+}
+
+type GetTokenListRes {
+  success: Boolean
+  message: String
+  data: [Token]
+}
+
+input CreateTokenReq {
+  token: String # 插件token
+}
+
+input UpdateTokenReq {
+  id: String # 主键
+  token: String # 插件token
+}
+
+input DeleteTokenReq {
+  id: String!
+}

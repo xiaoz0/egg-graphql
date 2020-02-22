@@ -1,0 +1,6 @@
+{
+  "name": "graphql-ts-app",
+  "egg": {
+    "typescript": true
+  }
+}
